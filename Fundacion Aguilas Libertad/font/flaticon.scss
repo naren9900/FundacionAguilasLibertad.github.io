@@ -1,0 +1,93 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?d52b8824136566e8581fb9aa6cb7e903") format("truetype"),
+url("./flaticon.woff?d52b8824136566e8581fb9aa6cb7e903") format("woff"),
+url("./flaticon.woff2?d52b8824136566e8581fb9aa6cb7e903") format("woff2"),
+url("./flaticon.eot?d52b8824136566e8581fb9aa6cb7e903#iefix") format("embedded-opentype"),
+url("./flaticon.svg?d52b8824136566e8581fb9aa6cb7e903#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "grupo": "\f101",
+    "menu": "\f102",
+    "estrella": "\f103",
+    "aceite-de-coche": "\f104",
+    "hora": "\f105",
+    "correo-electronico": "\f106",
+    "velocimetro": "\f107",
+    "filtro-de-aceite": "\f108",
+    "tanque-de-aceite": "\f109",
+    "gota-de-agua": "\f10a",
+    "emoticon-feliz-sonriendo-cuadrado": "\f10b",
+    "llamada-telefonica": "\f10c",
+    "signo-de-adicion": "\f10d",
+    "flecha": "\f10e",
+    "botella-de-aceite": "\f10f",
+    "facebook": "\f110",
+    "instagram": "\f111",
+);
+
+.flaticon-grupo:before {
+    content: map-get($flaticon-map, "grupo");
+}
+.flaticon-menu:before {
+    content: map-get($flaticon-map, "menu");
+}
+.flaticon-estrella:before {
+    content: map-get($flaticon-map, "estrella");
+}
+.flaticon-aceite-de-coche:before {
+    content: map-get($flaticon-map, "aceite-de-coche");
+}
+.flaticon-hora:before {
+    content: map-get($flaticon-map, "hora");
+}
+.flaticon-correo-electronico:before {
+    content: map-get($flaticon-map, "correo-electronico");
+}
+.flaticon-velocimetro:before {
+    content: map-get($flaticon-map, "velocimetro");
+}
+.flaticon-filtro-de-aceite:before {
+    content: map-get($flaticon-map, "filtro-de-aceite");
+}
+.flaticon-tanque-de-aceite:before {
+    content: map-get($flaticon-map, "tanque-de-aceite");
+}
+.flaticon-gota-de-agua:before {
+    content: map-get($flaticon-map, "gota-de-agua");
+}
+.flaticon-emoticon-feliz-sonriendo-cuadrado:before {
+    content: map-get($flaticon-map, "emoticon-feliz-sonriendo-cuadrado");
+}
+.flaticon-llamada-telefonica:before {
+    content: map-get($flaticon-map, "llamada-telefonica");
+}
+.flaticon-signo-de-adicion:before {
+    content: map-get($flaticon-map, "signo-de-adicion");
+}
+.flaticon-flecha:before {
+    content: map-get($flaticon-map, "flecha");
+}
+.flaticon-botella-de-aceite:before {
+    content: map-get($flaticon-map, "botella-de-aceite");
+}
+.flaticon-facebook:before {
+    content: map-get($flaticon-map, "facebook");
+}
+.flaticon-instagram:before {
+    content: map-get($flaticon-map, "instagram");
+}

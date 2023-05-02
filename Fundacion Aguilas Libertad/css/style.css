@@ -1,0 +1,838 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&family=Open+Sans&display=swap');
+
+
+/*font-family: 'Open Sans', sans-serif;*/
+
+:root{
+    --text-titulo:'Hind Siliguri', sans-serif;
+    --text:'Open Sans', sans-serif;
+    --color-principal-bg:#888781;
+    --color-principal-bgc:#f5f5f5;
+    --color-sutitulos:#cc7400;
+    --color-secundario-bg:#2d2d2d;
+}  
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    
+    margin: 0px;
+    
+}   
+
+img{
+    width: 100%;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0px;
+}
+
+.container{
+    width: 100%;
+    margin: auto;
+}
+
+.container--flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column{
+	width: 100%;
+}
+
+.main_header{
+	width: 100%;
+	height: 80px;
+	background-color:var(--color-principal-bgc);
+	position: relative;
+	padding-top:7px;
+	text-align: center;
+
+	
+}
+
+.class_logo{
+	width: 100px;
+	height: 100%;
+	padding: 0;
+	margin-left: 20px;
+
+}
+
+.img-logo{
+	width: 85%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+/*____________________________Estilo del menu________________________*/
+
+.main_nav{
+	padding: 0;
+	width: 100%;
+
+}
+
+.fa-bars, .fa-times{
+	color:var(--color-principal-bg);
+	font-size: 23px;
+	position: absolute;
+	top: 29px;
+	left: 85%;
+	cursor: pointer;
+	z-index: 20;
+
+}
+
+
+.fa-wrench:before, .fa-times:before{
+	display: none;
+	height: 0;
+}
+
+
+.numero{
+	display: none;
+	height: 0;
+}
+
+.main-nav ul{
+    list-style: none;
+}
+
+
+
+.menu{
+    text-align: left;
+    padding: 0;
+    background-color: var(--color-principal-bgc);
+	height: 0;
+	width: 100%;
+	margin: 0;
+	padding-top: 100px;
+	display: none;
+	padding-left:30px;
+	list-style: none;
+
+}
+
+.menu .menu-item .link_menu{
+    font-family: var(--text);
+    font-size: 16px;
+    text-decoration: none;
+    color:var(--color-principal-bg);
+    display: block;
+    padding: 10px 20px;
+}
+
+.menu .menu-item .select{
+	color: var(--color-sutitulos);
+}
+
+.menu .menu-item :hover{
+	color: var(--color-sutitulos);
+}
+
+
+
+.mostrar{
+	top: 0;
+	bottom: 0;	
+	width: 100%;
+	height: 100vh;
+	z-index: 10;	
+	position: fixed;
+	display: block;
+}
+
+.esicon:before{
+	display: block;
+	position: fixed;
+
+}
+
+.iconomenus:before{
+	display: block;
+	position: fixed;
+
+}
+
+
+.esiconx:before{
+	display: none;
+	position:relative;	
+}
+
+.esmenu{
+	display: none;
+}
+
+.iconmenu:before{
+	display: block;
+
+}
+
+/*____________________________Estilo del banner_____________________*/
+
+.banner{
+	width: 100%;
+	height:450px;
+	
+}
+
+.img-banner{
+	width: 100%;
+	height: 450px;
+	object-fit: cover;
+	z-index: -1;
+	top:80px;	
+}
+
+/*____________________________Estilo Seccion Parrafo_____________________*/
+
+.seccion-parrafo{
+	width: 100%;
+	height: 150px;
+	background-color: var(--color-sutitulos);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.contenedor-parrafo{
+	width: 90%;
+	height: auto;	
+}
+
+.text-parrafo{
+	width: 100%;
+	height: auto;
+	font-family: var(--text);
+	font-size:16px;
+	text-align: center;
+	letter-spacing: 0.2px;
+	color:var(--color-principal-bgc);
+}
+
+/*____________________________Estilo del seccion_____________________*/
+.seccion{
+	width: 100%;
+	height: auto;
+	background-color:white;
+	padding-bottom: 30px;
+	
+}
+
+.seccion .column{
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.subtitulo-seccion{
+	width: 100%;
+	height: auto;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+	font-family: var(--text-titulo)
+	font-size:30px;
+	color: var(--color-secundario-bg)
+}
+
+.seccion .futuro-mejor{
+	width: 100%;
+	text-align: center;
+}
+
+.img-futuro{
+	width: 90%;
+	height: auto;
+}
+
+/*____________________________Estilo del Misión_____________________*/
+
+.seccion-mision{
+	width:100%;
+	height:auto;
+	padding-bottom: 20px;
+	background-color: var(--color-principal-bgc);
+}
+
+.contenido-mision{
+	width: 100%;
+	margin-top: 30px;
+}
+
+.titulo-mision{
+	margin-left:10px;
+	font-family: var(--text-titulo);
+	font-size: 30px;
+	letter-spacing: 1px;
+	color: var(----color-secundario-bg);
+}	
+
+.seccion-mision p{
+	padding: 10px;
+	font-family: var(--text);
+	font-size:16px;
+	line-height: 21px;
+	/*color: #d6d6d6;*/
+	color:gray;
+}
+
+
+/*________________Estilos de seccion-historial_______________________________*/
+.seccion-historia{
+	width: 100%;
+	height: auto;
+	background-color: white;
+	padding-top: 40px;
+}
+
+.titulo-historia, .subtitulo-historia, .text-sub-historia{
+	width: 100%;
+	font-size:30px;
+	text-align: center;
+	font-family: var(--text-titulo);
+	color: var(--color-secundario-bg);
+}
+
+.subtitulo-historia{
+	font-size: 25px;
+
+}
+
+.text-sub-historia{
+	font-size: 16px;
+	font-family: var(--text);
+	margin-bottom: 40px;
+}
+
+.seccion-historia .column{
+	width: 300px;
+	height: 600px;
+	margin: auto;
+	background-color:var(--color-principal-bgc);
+	border-radius:20px;
+	margin-bottom: 40px;
+	overflow: hidden;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.4), 0 2px 8px 0 rgba(0, 0, 0, 0.5);
+}
+.img-testimonio{
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+	object-position: center;
+	border-radius:18px 18px 0 0;
+	margin-bottom: 10px;
+
+}
+
+.text-testimonio{
+	font-size: 15.4px;
+	font-family: var(--text);
+	color: var(--color-principal-bg);
+	margin:0 10px;
+}
+/*-------------Seccion Donate---------------*/
+.seccion-donate{
+	width: 100%;
+	height: 80vh;
+	position: relative;
+}
+.donate-img{
+	width: 100%;
+	height: 100%;
+}
+
+.img-seccion-donate{
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.texto-donate{
+	left: 0;
+	bottom: 0px;
+	z-index: 10;
+	width: 100%;,
+	margin: auto;
+	height: 300px;
+	position: absolute;
+	background-color: rgba(250, 250, 250, 0.8);
+	backdrop-filter:blur (15px);
+}
+
+.contenido-donate{
+	width: 90%;
+	height: auto;
+	margin: auto;
+}
+
+.contenido-donate h2{
+	font-size: 28px;
+	font-family: var(--text-titulo);
+	color:var(--color-secundario-bg);
+	margin-top: 50px;
+	text-align: center;
+}
+
+.contenido-donate p{
+	font-size: 16px;
+	font-family: var(--text);
+	align-items: center;
+}
+.contenido-donate a{
+	font-size: 16px;
+	font-family: var(--text);
+	text-align: center;
+	text-decoration: none;
+	background-color: var(--color-sutitulos);
+	width: 90px;
+	display: block;
+	line-height: 40px;
+	border-radius: 5px;
+	margin: auto;
+	color: white;
+}
+
+
+
+
+/*________________Estilos de footer_______________________________*/
+
+footer [class*=item]{
+	text-decoration: none;
+	color:gray;
+	margin-bottom: 10px;
+	font-family: var(--text);
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.title-creditos{
+	font-family: var(--text-titulo);
+	font-size: 23px;
+	color: var(--color-principal-b);
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.creditos{
+	font-family: var(--text);
+	font-size: 14px;
+	color: black;
+	padding:0 10px;
+	color: var(--color-principal-b)
+}
+
+.creditos p, .creditos a{
+	font-family: var(--text);
+	font-size: 15px;
+	color: gray;
+	text-decoration: none;
+	line-height: 21px;
+
+} 
+
+.creditos a{
+	cursor: pointer;
+}
+
+/*________________Estilos de responsive 425_______________________________*/
+
+@media screen and (min-width:425px){
+	
+	/*________________Estilos de Servicios_______________________________*/
+
+	.banner{
+		width: 100%;
+		height:500px;
+	}
+
+	.img-banner{
+		width: 100%;
+		height: 500px;
+		object-position: center;
+	}
+
+	/*________________Estilos de Seccion_______________________________*/
+	.seccion .subtitulo-seccion{
+		font-size: 25px;
+	}
+
+	.seccion .img-futuro{
+		width: 90%;
+		height: 350px;
+		max-height: 450px;
+		object-position: center top;
+		object-fit: cover;	
+	}
+}
+
+/*________________Estilos de responsive 768_______________________________*/
+
+@media screen and (min-width:768px){
+
+	/*____________________________Estilo del banner_____________________*/
+	
+	.banner{
+		width: 100%;
+		height:500px;
+	}
+
+	.img-banner{
+		width: 100%;
+		height: 500px;
+		position: static;
+		top:0px;	
+	}
+
+	/*___________________ Estilo Seccion Parrafo ___________________*/
+	.text-parrafo{
+		font-size: 18px;
+	}
+
+	/*________________Estilos de Seccion_______________________________*/
+	
+	.seccion .subtitulo-seccion{
+		font-size: 30px;
+	}
+
+	.seccion .container--flex{
+		width: 90%;
+		height: auto;
+		padding-bottom: 20px;
+	}
+	.seccion .column--25{
+		width: 50%;
+		padding: 10px;
+		margin:0;
+	}
+	.seccion .futuro-mejor{
+		width: 100%;
+		height: auto;
+	}
+
+	.seccion .img-futuro{
+		width: 100%;
+		height:350px;
+		object-position: center top;
+		object-fit: cover;	
+	}
+
+	/*____________________________Estilo del Misión_____________________*/
+
+	.seccion-mision{
+		width:100%;
+		height:90vh;
+		padding-bottom: 20px;
+	}
+
+	.seccion-mision .column--50{
+		width: 50%;
+		padding: 10px;
+	}
+
+	.contenido-mision{
+		width: 100%;
+		margin-top: 30px;
+	}
+
+	.titulo-mision{
+		padding: 0;
+		font-size: 30px;
+		letter-spacing: 1px;
+	}	
+
+	.seccion-mision p{
+		padding: 0 10px;
+		/*color: #d6d6d6;*/
+		color:gray;
+	}
+
+	/*________________Estilos de Donate*/
+	.contenido-donate h2{
+		font-size: 31px;
+	}
+
+	.contenido-donate p{
+		font-size: 17px;
+		text-align: center;
+	}
+	.contenido-donate a{
+		font-size: 17px;
+	}
+	/*________________Estilos de footer_______________________________*/
+	
+	footer{
+		margin-top: 0;
+		height: 320px;
+		overflow: hidden;
+	}
+	
+	footer .container--flex{
+		align-items: flex-start;
+	}
+
+	footer .column{
+		width: 32%;
+	}
+
+
+	.inhouse-lubr, .tit-Servicios, .title-creditos{
+		margin:0;
+		margin-top: 30px;
+		font-size: 22px;
+		padding-left: 10px;
+	}
+
+	.title-creditos{
+		margin-bottom: 14px;
+	}
+
+	footer [class*=item]{
+		font-size: 15px;
+	}
+}
+
+
+
+
+/*________________Estilos de responsive 1024_______________________________*/
+
+@media screen and (min-width:1024px){
+	/*____________________________Estilo del menu________________________*/
+	.main_header{
+		width: 100%;
+		height: 90px;
+		padding-top:4px;
+		padding-left: 10%;
+	}
+
+	.main_header .container--flex{
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+
+	.class_logo{
+		width: 100px;
+		height: auto;
+		text-align: center;
+		
+	}
+	
+	.img-logo{
+		width: 100%;
+		margin: auto;
+	}
+
+	.main_nav{
+		width: 60%;
+		height: 60px;
+		margin-top: -8px;
+		margin-right: 10%;
+	}
+
+	.fa-bars:before{
+		display: none;
+	}
+
+	.menu{
+		padding-top:0;
+		height: 100%;
+		width: 100%;
+		display: block;
+		background-color: inherit;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		list-style: none; 
+		padding-right: 100px;
+		
+	}
+
+	.menu .menu-item .link_menu{
+    	font-size: 17px;
+    	padding: 15px;
+    	font-weight: 500;
+	}
+
+
+	/*____________________________Estilo del banner_____________________*/
+	.banner{
+		width: 100%;
+		height:660px;
+	}
+
+	.img-banner{
+		width: 100%;
+		height:660px;
+	}	
+	
+	/*___________________ Estilo Seccion Parrafo ___________________*/
+	.text-parrafo{
+		font-size: 20px;
+	}
+
+	/*________________Estilos de Seccion_______________________________*/
+	
+	.seccion{
+		height: 90vh;
+	}
+
+	.seccion .subtitulo-seccion{
+		font-size: 35px;
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+
+	.seccion .container--flex{
+		width: 90%;
+		height: auto;
+	}
+	.seccion .column--25{
+		width: 25%;
+		padding: 10px;
+		margin:0;
+	}
+
+	.seccion .img-futuro{
+		width: 100%;
+		height:250px;
+		object-position: center top;
+		object-fit: cover;	
+	}
+	
+	/*________________Estilos de Seccion Mision_______________________________*/
+
+	.seccion-mision{
+		width:100%;
+		height:90vh;
+		padding-bottom: 20px;
+		padding-top: 80px;
+	}
+
+	.seccion-mision .container--flex{
+		width: 90%;
+	}
+
+	.seccion-mision .column--50{
+		width: 50%;
+		padding: 1px;
+	}
+
+	.contenido-mision{
+		width: 100%;
+		height: 450px;
+		margin-top:0;
+	}
+
+	.titulo-mision{
+		padding: 0;
+		font-size: 35px;
+		letter-spacing: 1px;
+	}	
+
+	.seccion-mision p{
+		padding: 0 10px;
+		/*color: #d6d6d6;*/
+		color:gray;
+		font-size:17px;
+		line-height: 23px;
+
+	}
+	
+	.img-mision{
+		width: 100%;
+		height: 450px;
+		object-fit: cover;
+		object-position: center;
+	}
+	/*________________Estilos de seccion-historia_______________________________*/
+
+	.titulo-historia{
+		font-size: 40px;
+		margin-bottom: 10px;
+	}
+	.subtitulo-historia{
+		font-size: 27px;
+		margin-bottom: 5px;
+	}
+
+	.text-sub-historia{
+		font-size: 19px;
+		font-family: var(--text);
+		margin-bottom: 40px;
+	}
+	.seccion-historia .container--flex{
+		width: 75%;
+	}
+
+	/*________________Estilos de Donate_______*/
+	.contenido-donate h2{
+		font-size: 35px;
+	}
+
+	.contenido-donate p{
+		font-size: 18px;
+		text-align: center;
+	}
+	.contenido-donate a{
+		font-size: 18px;
+	}
+
+
+	/*________________Estilos de footer_______________________________*/
+	
+	footer{
+		margin-top: 0;
+		height: 300px;
+	}
+	
+	footer .container--flex{
+		align-items: flex-start;
+		width: 80%;
+		margin: auto;f
+	}
+
+	footer .column{
+		width: 32%;
+	}
+
+	.inhouse-lubr, .tit-Servicios, .title-creditos{
+		margin:0;
+		margin-top: 30px;
+		font-size: 25px;
+		padding-left: 10px;
+	}
+
+	footer [class*=item]{
+		font-size: 16px;
+	}
+
+	.title-creditos{
+		margin-bottom: 15px;
+	}
+
+	.creditos{
+		font-size: 16px;
+	}
+
+	.creditos p, .creditos a{
+		font-size: 15px;
+	}
+
+	.text-servicio, .text-razon, .text-nosotros{
+		font-size: 16px;
+	}
+}
+
+/*____________________________Estilo del seccion_____________________
+	
